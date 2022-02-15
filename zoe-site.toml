@@ -51,6 +51,13 @@ href = "/rss.xml"
 email = "yanuoim@gmail.com"
 github = "yanuo"
 
+[comments]
+provider = "giscus"
+repo = "yanuo/yanuo.github.io"
+repoID = "MDEwOlJlcG9zaXRvcnkxODkyMDU5NDQ="
+categoryID = "DIC_kwDOC0cNuM4CBKuJ"
+theme = "preferred_color_scheme"
+
 [copyright]
 from = 2_019
 holder = "${zoe.author.name}"
