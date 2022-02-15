@@ -1,0 +1,73 @@
+title = "雅诺"
+description = "在互联网上留下一点痕迹"
+# this filed used by manifest plugin
+# which only supports:
+# - project root based relative path
+# - absolute path
+# - remote url
+# so, we must use absolute path at here
+logo = "${__dirname}/images/default.png"
+version = "beta"
+primaryColor = "green"
+baseContentDir = [ "${__dirname}/content" ]
+zoePlugins = [ "src/plugins/blog-post" ]
+# gtagTrackingIds = [ "" ]
+
+[author]
+name = "雅诺"
+email = "yanuoim@gmail.com"
+homepage = "https://yanuo.me"
+avatar = "https://github.com/yanuo.png"
+
+[[navs]]
+title = "博客"
+href = "/blogs"
+
+[[navs]]
+title = "关于"
+href = "/about"
+
+[[links]]
+title = "主页"
+category = "站点"
+href = "/"
+
+[[links]]
+title = "博客"
+category = "站点"
+href = "/blogs"
+
+[[links]]
+title = "关于"
+category = "站点"
+href = "/about"
+
+[[links]]
+title = "RSS订阅"
+category = "实验"
+href = "/rss.xml"
+
+[socials]
+email = "yanuoim@gmail.com"
+github = "yanuo"
+
+[copyright]
+from = 2_019
+holder = "${zoe.author.name}"
+location = "Earth"
+
+[layouts]
+default = """
+maxWidth: ${zoe.maxWidth} # ["100%", "80%", "80%", "80%", "60rem"]
+header:
+  logoProps:
+    textColor: 'unset'
+footer:
+  disableBorder: true
+  disableGotop: true
+  disableLogo: false
+  disableSocials: false
+  disableLinks: false
+  logoProps:
+    textColor: 'unset'
+"""
